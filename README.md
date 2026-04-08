@@ -22,6 +22,8 @@ The goal was to simulate what a system administrator or security analyst would d
 
 Before making any changes, I reviewed the system’s default configuration to understand its security posture.
 
+( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/defaultSystemPolicies.png )
+
 ### What I checked
 
   - Password policy settings ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/DefulatPasswordSettings.png )
@@ -59,7 +61,7 @@ I enabled auditing to ensure that important system events are logged and can be 
 - Logon and logoff events
     Logon ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/HardenedAccountLogon.png )
     Logoff ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/HardenedLogonLogoff.png )
-- Account management  ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/HardenedAccountManagement.png)
+- Account management  ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/HardenedAccountManagement.png )
 - Policy changes  ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/HardenedSystemPolicies.png )
 - Privilege use  ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/HardenedPrivilegeUse.png )
 
@@ -68,6 +70,9 @@ I enabled auditing to ensure that important system events are logged and can be 
 ## Phase 4 — Service Hardening
 
 I reviewed the list of running services to identify unnecessary or potentially risky services.
+
+( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/DefaultRunningServices1.png )
+( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/DefaultRunningServices2.png )
 
 ### What I did
 
@@ -83,8 +88,11 @@ I configured additional local security settings to improve system protection and
 
 ### Changes implemented
 
-- Enabled an interactive logon message  
-- Reviewed administrator account settings  
+- Enabled an interactive logon message
+    ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/Step5InteractiveLogon.png )
+    ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/Step6%20Placeholder.png )
+  
+- Reviewed administrator account settings  ( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/Step5RenameAdmin.png )
 - Adjusted security-related local policies  
 
 ---
@@ -101,6 +109,7 @@ After applying all configurations, I verified that the changes were working as e
 - Reviewed logs in Event Viewer  
 
 ---
+( https://github.com/MBKLoup/Windows-Security-Hardening/blob/main/Screenshots/Step6%20Lockout.png )
 
 ## Challenges & Observations
 
